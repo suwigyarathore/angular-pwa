@@ -1,0 +1,11 @@
+mat-card {
+  margin: 20px
+}
+
+mat-input-container,mat-slider {
+  width: 100%
+}
+
+mat-card-title {
+  font-size: larger
+}

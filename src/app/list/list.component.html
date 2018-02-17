@@ -1,0 +1,19 @@
+<mat-card *ngFor="let tea of list">
+  <mat-card-title>{{ tea.name }}</mat-card-title>
+  <mat-card-subtitle>Place: {{ tea.place }}</mat-card-subtitle>
+  <mat-card-actions>
+    <button mat-button (click)="goToMap(tea)">
+      <mat-icon>map</mat-icon>
+    </button>
+    <button mat-button (click)="share(tea)">
+      <mat-icon>share</mat-icon>
+    </button>
+    <button mat-button (click)="goDetails(tea)">
+      <mat-icon>list</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+<a id="btnCreate" mat-fab routerLink="/tea">
+  <mat-icon>create</mat-icon>
+</a>
